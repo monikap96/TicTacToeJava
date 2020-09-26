@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: #6EC1F8;" vgap="10"
+          xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints/>
+      <ColumnConstraints/>
+      <ColumnConstraints/>
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints/>
+      <RowConstraints/>
+      <RowConstraints/>
+      <RowConstraints/>
+      <RowConstraints/>
+      <RowConstraints/>
+      <RowConstraints/>
+   </rowConstraints>
+   <Button id="id00" fx:id="id00" mnemonicParsing="false" onMousePressed="#setValue"
+           style="-fx-pref-width: 50px; -fx-pref-height: 50px;" text=" " GridPane.rowIndex="3"/>
+   <Button id="id01" fx:id="id01" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMousePressed="#setValue"
+           style="-fx-pref-width: 50px; -fx-pref-height: 50px;" text=" " GridPane.columnIndex="1"
+           GridPane.rowIndex="3"/>
+   <Button id="id02" fx:id="id02" layoutX="70.0" layoutY="10.0" mnemonicParsing="false" onMousePressed="#setValue"
+           style="-fx-pref-width: 50px; -fx-pref-height: 50px;" text=" " GridPane.columnIndex="2"
+           GridPane.rowIndex="3"/>
+   <Button id="id10" fx:id="id10" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMousePressed="#setValue"
+           style="-fx-pref-width: 50px; -fx-pref-height: 50px;" text=" " GridPane.rowIndex="4"/>
+   <Button id="id11" fx:id="id11" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMousePressed="#setValue"
+           style="-fx-pref-width: 50px; -fx-pref-height: 50px;" text=" " GridPane.columnIndex="1"
+           GridPane.rowIndex="4"/>
+   <Button id="id12" fx:id="id12" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMousePressed="#setValue"
+           style="-fx-pref-width: 50px; -fx-pref-height: 50px;" text=" " GridPane.columnIndex="2"
+           GridPane.rowIndex="4"/>
+   <Button id="id20" fx:id="id20" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onMousePressed="#setValue"
+           style="-fx-pref-width: 50px; -fx-pref-height: 50px;" text=" " GridPane.rowIndex="5"/>
+   <Button id="id21" fx:id="id21" layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onMousePressed="#setValue"
+           style="-fx-pref-width: 50px; -fx-pref-height: 50px;" text=" " GridPane.columnIndex="1"
+           GridPane.rowIndex="5"/>
+   <Button id="id22" fx:id="id22" layoutX="70.0" layoutY="130.0" mnemonicParsing="false" onMousePressed="#setValue"
+           style="-fx-pref-width: 50px; -fx-pref-height: 50px;" text=" " GridPane.columnIndex="2"
+           GridPane.rowIndex="5"/>
+   <Label id="whoseTurn" fx:id="whoseTurn" contentDisplay="CENTER" text="Turn: " GridPane.columnSpan="2"
+          GridPane.rowIndex="2"/>
+   <Label text="win O" GridPane.columnIndex="2"/>
+   <Label text="win X"/>
+   <Label fx:id="score" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-alignment: center;" text="0 - 0"
+          textAlignment="CENTER" GridPane.columnIndex="1"/>
+   <Button fx:id="newGameButton" mnemonicParsing="false" onMousePressed="#newGame" prefHeight="50.0" prefWidth="170.0"
+           text="New game" visible="false" GridPane.columnSpan="3" GridPane.rowIndex="6"/>
+</GridPane>
